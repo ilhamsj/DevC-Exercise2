@@ -1,11 +1,81 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Exercise 2</title>
-</head>
-<body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise2 | DevC</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div>
+				<a href="index.html">
+					<img src="https://hacktiv8.com/img/logo-hacktiv8_bordered.png__vzu2vhp2VRX%2Bewg7J0bPlaAf7ee5fc69819b5ef3849344c119f5e18">
+				</a>
+			</div>
+			<div>
+				<h2>Kalkulator</h2>
+			</div>
+			<div class="menu active">
+				<a href=""><img src="assets/img/calc.png"></a>
+			</div>
+			<div class="menu">
+				<a href=""><img src="assets/img/maps.png"></a>
+			</div>
+		</header>
+		<div class="container">
+			<div class="content">
+				<div class="hasil">
+					<input id="hasil" type="number" value="0" readonly />
+					<input id="hitung" type="text" autofocus placeholder="0" />
+				</div>
+				<div class="tombol">
+					<button onclick="angka('7')" class="angka">7</button>
+					<button onclick="angka('8')" class="angka">8</button>
+					<button onclick="angka('9')" class="angka">9</button>
+					<button class="numb">INV</button>
+					<button class="numb">DEG</button>
+					<button class="numb">%</button>
+					<button onclick="calc('/')" class="calc">/</button>
+					<button onclick="del()" class="calc">DEL</button>
+
+					<button onclick="angka('4')" class="angka">4</button>
+					<button onclick="angka('5')" class="angka">5</button>
+					<button onclick="angka('6')" class="angka">6</button>
+					<button onclick="numb('sin')" class="numb">sin</button>
+					<button onclick="numb('cos')" class="numb">cos</button>
+					<button onclick="numb('tan')" class="numb">tan</button>
+					<button onclick="calc('*')" class="calc">x</button>
+					<button onclick="clr()" class="calc">CLR</button>
+					
+					<button onclick="angka('1')" class="angka">1</button>
+					<button onclick="angka('2')" class="angka">2</button>
+					<button onclick="angka('3')" class="angka">3</button>
+					<button class="numb">^</button>
+					<button class="numb">log</button>
+					<button class="numb">!</button>
+					<button onclick="calc('-')" class="calc">-</button>
+					<button onclick="hasil" class="calc res">=</button>
+					
+					<button onclick="angka('.')" class="angka">.</button>
+					<button onclick="angka('0')" class="angka zero">0</button>
+					<button class="numb">+</button>
+					<button class="numb">log</button>
+					<button class="numb">!</button>
+					<button onclick="calc('+')" class="calc">+</button>
+				</div>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li class=""><a href="">DevC-Exercise1</a></li>
+					<li class="active"><a href="">DevC-Exercise2</a></li>
+					<li><a href="">DevC-Exercise3</a></li>
+					<li><a href="">DevC-Exercise4</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="assets/js/calc.js"></script>
 </html>
